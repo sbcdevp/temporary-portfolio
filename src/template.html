@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-  <title><%= htmlWebpackPlugin.options.title %></title>
-
-</head>
-
-<body>
-
-  <div id="root"></div>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Serge Bocancea</title>
+  </head>
+  <body>
+    <div class="container js-container">
+      <div class="container__intro js-intro-container">
+        <h2 class="intro__name"><span class="js-intro-name">Serge Bocancea</span></h2>
+      </div>
+      <div class="container__left js-left-container">
+        <canvas class="canvas-head js-canvas-head"></canvas>
+        <div class="container__content">
+          <div class="content__info">
+            <h1 class="info__name js-name">Serge Bocancea</h1>
+            <div class="info__about" class="js-about">
+              <span>Creative Developer</span>
+              <span class="separator"></span>
+              <span>Paris</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__right">
+        <canvas class="canvas-projects"></canvas>
+        <div class="container__content">
+          <div class="content__info">
+            <div class="info__projects">
+              <ul>
+                <li class="project__title js-title"><a href="">Whole</a></li>
+                <li class="project__title js-title"><a href="">Mirror</a></li>
+                <li class="project__title js-title"><a href="">Louvre</a></li>
+                <li class="project__title js-title"><a href="">Dfts</a></li>
+              </ul>
+            </div>
+            <div class="info__contact">
+              <a class="js-contact" href="mailto:contact.bocancea@gmail.com"><span>Contact me</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </body>
 </html>
