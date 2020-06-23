@@ -1,5 +1,5 @@
 import AnimationComponent from "./AnimationComponent.js"
-import HeadComponent from "./HeadComponent.js"
+import ThreeMainScene from "./ThreeMainScene.js"
 import IntroComponent from "./IntroComponent.js"
 
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
@@ -11,9 +11,9 @@ import models from "../models/models.json"
 class LoadingComponent {
     constructor() {
         this._ui = {
-            animationComponent: new AnimationComponent({el: document.querySelector('.js-container')}),
-            introComponent: new IntroComponent({el: document.querySelector('.js-intro-container')}),
-            headComponent: new HeadComponent({el: document.querySelector('.js-left-container')})
+            animationComponent: new AnimationComponent({ el: document.querySelector('.js-container') }),
+            introComponent: new IntroComponent({ el: document.querySelector('.js-intro-container') }),
+            threeMainScene: new ThreeMainScene()
         }
         this._setup();
     }
